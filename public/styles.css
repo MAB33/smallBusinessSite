@@ -1,0 +1,10 @@
+#wrapper {
+	background-color:black
+	font-family: Arial, sans-serif;
+	color: #ccc;
+}
+
+.nav {
+	background-color: red;
+	border: 1px dashed #333;
+}
