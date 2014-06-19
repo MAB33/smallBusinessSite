@@ -1,18 +1,22 @@
-#wrapper {
-
-	background-color:black;
+html {
 	font-family: Arial, sans-serif;
-	color: #ccc;
+	font-size: 14px;
 }
 
-.nav {
-	background-color: red;
-	border: 1px dashed #333;
+
+/* BEGINNING OF CONTACT ERB STYLING*/
+
+#formWrapper {
+	padding: 40px;
 }
 
-#logo{
-	height: 200px;
+.senderInfo {
 	width: 200px;
-	background-color: black;
-
 }
+
+#messageBox {
+	height: 130px;
+	width: 400px;
+}
+
+/* END OF CONTACT ERB STYLING */
