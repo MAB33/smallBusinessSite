@@ -185,30 +185,32 @@ nav ul li {
 
 /* BEGINNING OF CONTACT ERB STYLING*/
 
-#formWrapper {
-	padding: 40px 0 40px 70px ;
-	width: 600px;
+#formWrapper, #receive_form {
+	padding: 20px 0 40px 70px ;
+	width: 450px;
 }
 
 h3 {
 	font-size: 30px;
 	font-style: italic;
+	font-weight: bold;
 }
 
-.textFields, #contactDesc, h3 {
+.textFields, #contactDesc, h3, #msgReceived, #msgNote {
 	padding-bottom: 15px;
 }
 
 input, textarea {
 	border: 1px solid black;
+	margin-top: 5px;
 }
 
 input:hover, textarea:hover {
-	border: 1px solid red;
+	border: 1px solid #aaa;
 }
 
 input:focus, textarea:focus {
-	border: 1px solid red;
+	border: 1px solid #aaa;
 	outline: 0;
 }
 
@@ -221,6 +223,11 @@ textarea {
 	width: 400px;
 }
 
+label {
+	font-style: italic;
+	/*line-height: 22px;*/
+}
+
 #submitButton {
 	font-weight: bold;
 	font-size: 12px;
@@ -229,3 +236,17 @@ textarea {
 }
 
 /* END OF CONTACT ERB STYLING */
+
+/* RECEIVED FORM ERB STYLING */
+
+#msgReceived {
+	font-size: 20px;
+	font-style: italic;
+}
+
+#sig {
+	color: red;
+	text-align: right;
+}
+
+/* END RECEIEVED FORM STYLING */
