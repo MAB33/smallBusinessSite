@@ -181,7 +181,20 @@ nav ul li {
 }
 /*END instagramFeed STYLING*/
 
+#collectionWrapper {
+	text-align: center;
+}
 
+#collectionWrapper img{
+/*	min-width: 700px;
+	max-width: 900px;*/
+	width: 700px;
+	margin-bottom: 30px;
+}
+
+#collectionWrapper img:hover {
+	opacity: .5;
+}
 
 /* BEGINNING OF CONTACT ERB STYLING*/
 

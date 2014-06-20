@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'mandrill'
 
+
+
 def send_message(senderName, senderEmail, message)
 	m = Mandrill::API.new
 	message = {  
@@ -43,4 +45,8 @@ end
 
 get '/receive_form' do
 	erb :receive_form
+end
+
+get '/counter' do
+	erb :counter
 end
