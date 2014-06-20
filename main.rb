@@ -41,6 +41,6 @@ post '/submit-form' do
 	redirect to '/receive_form'
 end
 
-get '/receive_form'
+get '/receive_form' do
 	erb :receive_form
 end
