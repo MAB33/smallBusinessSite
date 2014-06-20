@@ -10,6 +10,10 @@ html {
 	padding: 40px;
 }
 
+h3 {
+	font-size: 30px;
+}
+
 .senderInfo {
 	width: 200px;
 }
