@@ -179,20 +179,45 @@ nav ul li {
 /* BEGINNING OF CONTACT ERB STYLING*/
 
 #formWrapper {
-	padding: 40px;
+	padding: 40px 0 40px 70px ;
+	width: 600px;
 }
 
 h3 {
 	font-size: 30px;
+	font-style: italic;
+}
+
+.textFields, #contactDesc, h3 {
+	padding-bottom: 15px;
+}
+
+input, textarea {
+	border: 1px solid black;
+}
+
+input:hover, textarea:hover {
+	border: 1px solid red;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid red;
+	outline: 0;
 }
 
 .senderInfo {
 	width: 200px;
 }
 
-#messageBox {
+textarea {
 	height: 130px;
 	width: 400px;
+}
+
+#submitButton {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 6px;
 }
 
 /* END OF CONTACT ERB STYLING */

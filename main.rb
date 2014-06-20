@@ -38,5 +38,9 @@ end
 
 post '/submit-form' do
 	send_message(params[:senderName], params[:senderEmail], params[:message])
-	redirect to('/')
+	redirect to '/receive_form'
+end
+
+get '/receive_form'
+	erb :receive_form
 end
