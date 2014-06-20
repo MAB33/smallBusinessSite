@@ -40,8 +40,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 html, body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -218,6 +216,7 @@ textarea {
 	font-weight: bold;
 	font-size: 12px;
 	padding: 6px;
+	background-color: white;
 }
 
 /* END OF CONTACT ERB STYLING */
