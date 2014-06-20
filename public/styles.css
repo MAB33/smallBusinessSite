@@ -39,12 +39,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-END cssres
+
 
 
 html, body {
 	margin: 0;
-	/*background: url('images/45degreee_fabric.png');*/
+	font-family: Arial, sans-serif;
+	font-size: 14px;
 }
 
 /*body {
@@ -53,7 +54,6 @@ html, body {
 
 #wrapper {
 	background-color: #fff;
-	font-family: arial, sans-serif;
 }
 
 
@@ -182,3 +182,51 @@ nav ul li {
 	background: url(images/home.jpg) center center no-repeat;
 }
 /*END instagramFeed STYLING*/
+
+
+
+/* BEGINNING OF CONTACT ERB STYLING*/
+
+#formWrapper {
+	padding: 40px 0 40px 70px ;
+	width: 600px;
+}
+
+h3 {
+	font-size: 30px;
+	font-style: italic;
+}
+
+.textFields, #contactDesc, h3 {
+	padding-bottom: 15px;
+}
+
+input, textarea {
+	border: 1px solid black;
+}
+
+input:hover, textarea:hover {
+	border: 1px solid red;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid red;
+	outline: 0;
+}
+
+.senderInfo {
+	width: 200px;
+}
+
+textarea {
+	height: 130px;
+	width: 400px;
+}
+
+#submitButton {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 6px;
+}
+
+/* END OF CONTACT ERB STYLING */
