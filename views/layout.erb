@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title> </title>
+	<title><%= @title ||= "Kismet" %></title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	
 
-	<%= yield %>
+	<div id="wrapper">
 
+		<%= yield %>
+
+		<div id="sidebarWrapper">
+			<div id="sidebar">
+				<div id="logo"></div>
+				<nav>
+					<ul id="navLinks">
+						<li><a href="#">About</a></li>
+						<li><a href="/collections">Collections</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div>
+					<ul id="socialMediaIcons">
+						<a href="http://www.facebook.com"><li id="facebook"></li></a>
+						<a href="#"><li id="twitter"></li></a>
+						<a href="#"><li id="pintrest"></li></a>
+						<a href="#"><li id="instagram"></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>

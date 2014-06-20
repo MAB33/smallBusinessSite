@@ -6,10 +6,12 @@ get '/' do
 end
 
 get '/collections' do
+	@title = "Collections"
 	erb :collections
 end
 
 get '/contact' do
+	@title = "Contact"
 	erb :contact
 end
 

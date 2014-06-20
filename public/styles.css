@@ -1,18 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html, body {
+	margin: 0;
+}
+
+html {
+	background: url('');
+}
+
+/*body {
+	border-top: solid 6px black;
+}*/
+
 #wrapper {
-
-	background-color:black;
-	font-family: Arial, sans-serif;
-	color: #ccc;
+	background-color: #fff;
+	/*font-family: arial, sans-serif;*/
 }
 
-.nav {
-	background-color: red;
-	border: 1px dashed #333;
-}
 
-#logo{
-	height: 200px;
+/*START sidebar STYLING*/
+#sidebar {
+/*	border: 1px dashed red;*/
+	display: block;
+	float: left;
+	position: fixed;
+	min-height: 1000px;
+	top: 0;
+	left: 0;
 	width: 200px;
-	background-color: black;
+	padding: 30px;
+	background-color: white;
+}
+
+nav {
+/*	border: 1px dashed #333;*/
+	font-size: 11pt;
+	color: black;
+	letter-spacing: 1pt;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav ul li {
+	margin-bottom: 11px;
+}
+
+#logo {
+/*	border: 1px dashed blue;*/
+	height: 80px;
+	width: 200px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 30px;
+	background-color: ;
 
 }
+
+#socialMediaIcons {
+	list-style-type: none;
+}
+#socialMediaIcons li {
+	text-indent: 0;
+	padding: 0;
+	display: inline-block;
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin: 20px 20px 0 0;
+/*	background-color: gray;
+	border-radius: 100%;*/
+}
+#facebook {
+	background: url(images/facebook.png) center center no-repeat;
+	background-size: contain;
+}
+#twitter {
+	background: url(images/twitter.png) center center no-repeat;
+	background-size: contain;
+}
+#instagram {
+	background: url(images/instagram.png) center center no-repeat;
+	background-size: contain;
+}
+#pintrest {
+	background: url(images/pintrest.png) center center no-repeat;
+	background-size: contain;
+}
+/*END sidebar STYLING*/
+
+
+/*START  mainContent STYLING*/
+#mainContent {
+/*	border: 1px dashed blue;*/
+	position: relative;
+	margin-left: 260px;
+	min-width: 800px;
+	height: 100%;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+#homeImage, #collectionImage {
+	min-width:800px;
+}
+
+#homeImage img, #collectionImage img {
+	width:100%;
+}
+/*END mainContent STYLING*/
+
+
+/*START instagramFeed STYLING*/
+#instagramFeed {
+	height: 100px;
+	width: 100%;
+	overflow-y: hidden;
+	min-width: 800px;
+}
+.instagramPic {
+	display: inline-block;
+	height: 100px;
+	width: 12.92%;
+	background-color: gray;
+	margin: 1% 1% 0 0;
+}
+/*END instagramFeed STYLING*/
