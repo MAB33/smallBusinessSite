@@ -39,15 +39,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+END cssres
 
 
 html, body {
 	margin: 0;
-}
-
-html {
-	background: url('');
+	/*background: url('images/45degreee_fabric.png');*/
 }
 
 /*body {
@@ -56,7 +53,7 @@ html {
 
 #wrapper {
 	background-color: #fff;
-	/*font-family: arial, sans-serif;*/
+	font-family: arial, sans-serif;
 }
 
 
@@ -69,14 +66,15 @@ html {
 	min-height: 1000px;
 	top: 0;
 	left: 0;
-	width: 200px;
+	width: 180px;
 	padding: 30px;
 	background-color: white;
+/*	background: url('images/45degreee_fabric.png');*/
 }
 
 nav {
 /*	border: 1px dashed #333;*/
-	font-size: 11pt;
+	font-size: 10pt;
 	color: black;
 	letter-spacing: 1pt;
 	text-transform: uppercase;
@@ -89,7 +87,7 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration: underline;
+	text-decoration: line-through;
 }
 
 nav ul li {
@@ -98,13 +96,14 @@ nav ul li {
 
 #logo {
 /*	border: 1px dashed blue;*/
-	height: 80px;
-	width: 200px;
-	padding-bottom: 20px;
 	border-bottom: 1px solid gray;
-	margin-bottom: 30px;
+	margin: 20px 0 30px 0;
 	background-color: ;
+}
 
+#logo img {
+	width: 180px;
+	padding-bottom: 25px;
 }
 
 #socialMediaIcons {
@@ -142,17 +141,16 @@ nav ul li {
 
 /*START  mainContent STYLING*/
 #mainContent {
-/*	border: 1px dashed blue;*/
 	position: relative;
-	margin-left: 260px;
-	min-width: 800px;
+	margin-left: 240px;
+	min-width: 900px;
 	height: 100%;
 	padding-top: 30px;
 	padding-right: 30px;
 }
 
 #homeImage, #collectionImage {
-	min-width:800px;
+	min-width:900px;
 }
 
 #homeImage img, #collectionImage img {
@@ -163,16 +161,24 @@ nav ul li {
 
 /*START instagramFeed STYLING*/
 #instagramFeed {
-	height: 100px;
 	width: 100%;
-	overflow-y: hidden;
-	min-width: 800px;
+	min-width: 900px;
+	text-align: center;
+	margin: 12px 0;
 }
-.instagramPic {
+#instagramTitle {
+	
+}
+#instagramPic1, #instagramPic2, #instagramPic3, #instagramPic4, #instagramPic5 {
 	display: inline-block;
-	height: 100px;
-	width: 12.92%;
+	position: relative;
+	height: 150px;
+	width: 150px;
 	background-color: gray;
-	margin: 1% 1% 0 0;
+	margin-right: 12px;
+	background-size: cover;
+}
+#instagramPic1 {
+	background: url(images/home.jpg) center center no-repeat;
 }
 /*END instagramFeed STYLING*/
