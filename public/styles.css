@@ -209,16 +209,62 @@ nav ul li {
 	text-align: center;
 }
 
-#collectionWrapper img{
+#collectionImage1, #collectionImage2, #collectionImage3{
 /*	min-width: 700px;
 	max-width: 900px;*/
+	width: 700px;
+	height: 500px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin: 0 auto;
+	color: transparent;
+	margin-bottom: 25px;
+}
+
+#collectionImage1 p, #collectionImage2 p, #collectionImage3 p {
+	visibility: hidden;
+}
+
+#collectionImage1 {
+	background: url(images/collections_rings1.jpg) center center no-repeat;
+}
+#collectionImage2 {
+	background: url(images/collections_neck1.jpg) center center no-repeat;
+	background-size: 900px;
+}
+#collectionImage3 {
+	background: url(images/collections_earrings.jpg) center center no-repeat;
+}
+
+#collectionImage1:hover, #collectionImage2:hover, #collectionImage3:hover {
+	/*opacity: .3;*/
+	color: black;
+}
+#collectionImage1:hover p, #collectionImage2:hover p, #collectionImage3:hover p {
+	visibility: visible;
+	padding: 250px 0;
+	background-color: white;
+	opacity: .7;
+	font-weight: bold;
+	font-size: 18pt;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+/*#collectionWrapper {
+	text-align: center;
+}
+
+#collectionWrapper img{
+	min-width: 700px;
+	max-width: 900px;
 	width: 700px;
 	margin-bottom: 30px;
 }
 
 #collectionWrapper img:hover {
 	opacity: .5;
-}
+}*/
 
 /* BEGINNING OF CONTACT ERB STYLING*/
 
